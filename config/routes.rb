@@ -13,4 +13,6 @@ get'chiikawas/kyou'=>'chiikawas#kyou'
 get'chiikawas/daikyou'=>'chiikawas#daikyou'
 get'chiikawas/story'=>'chiikawas#story'
 get'chiikawas/good'=>'chiikawas#good'
+
+root "chiikawas#index"
 end
