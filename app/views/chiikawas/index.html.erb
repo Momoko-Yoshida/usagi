@@ -1,0 +1,38 @@
+<body>
+    <div class="text_box">
+ちいかわ制作委員会（笑）<br>
+    </div>
+    <div class="main">
+ちいかわ紹介しちゃうってコトっ！？
+    </div>
+
+<%= image_tag "chiikawas_toppage.jpg", :size => '1200x710'%>
+<div class= "usagi">
+    <div class="characters">
+        <p class="title">characters</p>      
+        <%= link_to chiikawas_link_path do %>
+            <%= image_tag 'Rectangle 9.jpg', :size => '250x300'%>
+        <% end %>
+        <p>キャラクター紹介はこちらから</p>
+    </div>
+    <div class="hachiware">    
+        <p class="title">story</p>
+        <%= link_to chiikawas_story_path do %>
+            <%= image_tag 'Rectangle 16.jpg',:size => '250x300' %>
+            <% end %>
+            <p>ちいかわの世界を教えます！！<br>ちいかわのイメージが変わるかも？？</P>
+    </div>
+    <div class="chiikawa">
+        <p class="title">good point</p>
+        <%= link_to chiikawas_good_path do %>
+            <%= image_tag 'Rectangle 17.jpg',:size => '250x300' %>
+            <% end %>
+             <p>ここではちいかわの魅力が分かる!<br>絶対に見てほしいかも！！</P>
+    </div>
+</div>
+    <div class="link">
+    <p> 画像をクリックしてね</p>
+        <p>動画のリンクはこちらから↓↓</P>
+    </div>
+        <a href="sample2.html"><img src="next.png" alt="次へ"></a>
+</body>

@@ -1,0 +1,32 @@
+// Place all the styles related to the chiikawas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.usagi{
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+.text_box{
+     font-size:25px;
+     margin:20px;
+    font-family: 'Courier New', Courier, monospace;
+     color: rgb(236, 151, 184);
+}
+.main{
+    font-size:35px;
+    margin:20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(255, 213, 0, 0.97);
+}
+.title{
+    font-size:20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.link{
+    text-align: center;
+
+}
+

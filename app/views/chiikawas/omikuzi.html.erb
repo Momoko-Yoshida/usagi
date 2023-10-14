@@ -1,0 +1,26 @@
+<div class="omikuji">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>サンプル</title>
+<script type="text/javascript">
+<!--
+var mylink = new Array(
+    "/chiikawas/daikiti",
+    "/chiikawas/tyuukiti",
+    "/chiikawas/syoukiti",
+    "/chiikawas/suekiti",
+    "/chiikawas/kiti",
+    "/chiikawas/kyou",
+    "/chiikawas/daikyou"
+
+);
+function random_jump() {
+    var i = Math.floor(Math.random() * mylink.length);
+    location.href = mylink[i];
+}
+// -->
+</script>
+<body>
+<button type="button" onclick="javascript:random_jump();", class="button">今日のあなたの運勢</button>
+</body>
+</div>
