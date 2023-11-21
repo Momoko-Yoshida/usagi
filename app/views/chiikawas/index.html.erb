@@ -1,40 +1,66 @@
-<body>
-    <div class="text_box">
-ちいかわ制作委員会（笑）<br>
-    </div>
-    <div class="main">
-ちいかわ紹介しちゃうってコトっ！？
-    </div>
+<body> 
+<%= image_tag 'haikei toppage.jpg', :size => '1200x2050',class:"ame"%>
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+<div style="position: relative; display:inline-block;">
+<%= image_tag 'chiikawas_toppage.jpg',:size => '1200x650' %>
+<div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 100%; padding: 30px; text-align: left;">
+<p class="egg">～ちいかわサイト～</p>
+</div></div>
 
-<%= image_tag "chiikawas_toppage.jpg", :size => '1200x710'%>
+    
+<h1 class="ribbon">
+   <span class="ribbon-content">ようこそちいかわサイトへ</span>
+</h1>
 <div class= "usagi">
     <div class="characters">
         <p class="title">characters</p>      
         <%= link_to chiikawas_link_path do %>
-            <%= image_tag 'Rectangle 9.jpg', :size => '250x300'%>
+            <%= image_tag 'Rectangle 9.jpg', :size => '250x300',class:"pa"%>
         <% end %>
-        <p>キャラクター紹介はこちらから</p>
+        <p class="explain">キャラクター紹介はこちらから</p>
     </div>
     <div class="hachiware">    
         <p class="title">story</p>
         <%= link_to chiikawas_story_path do %>
-            <%= image_tag 'Rectangle 16.jpg',:size => '250x300' %>
+            <%= image_tag 'Rectangle 16.jpg',:size => '250x300' ,class:"pa"%>
             <% end %>
-            <p>ちいかわの世界観がわかります</P>
+            <p class="explain">ちいかわの世界観がわかるかもっ！？</P>
     </div>
     <div class="chiikawa">
         <p class="title">good point</p>
         <%= link_to chiikawas_good_path do %>
-            <%= image_tag 'Rectangle 17.jpg',:size => '250x300' %>
+            <%= image_tag 'Rectangle 17.jpg',:size => '250x300' ,class:"pa"%>
             <% end %>
-             <p>ここではちいかわの魅力が分かる!<br>絶対に見てほしいかも！！</P>
+             <p class="explain">ここではちいかわの魅力が分かる!</P>
     </div>
 </div>
     <div class="link">
-    <p> 画像をクリックしてね</p>
-        <p>動画のリンクはこちらから↓↓</P>
-    </div>
+    <p class="explain"> 画像をクリックしてね↑↑</p>
+    <div class="sinndann">
+    chiikawas characters
+      </div>
+    <div class="sindangazou"><br><br>
+    <%= image_tag 'sindan.jpg',:size => '550x400' %>  <br>
+                                                      <br>
+</div>
+<h1 class="ribbon">
+<span class="ribbon-content">キャラクター診断する人はボタンを押してね！</span>
+</h1>
+    <%= link_to"TAP！",new_topic_path,class:"omi2" %><br><br>
+    <%= link_to"今日の運勢を占おう", chiikawas_omikuzi_path,class:"omi" %>
+    <div class="douga">
+    <p>アニメ動画のリンクはこちらから↓↓</P>
     <a href="https://youtu.be/pbQQAwSQUX4">
-    <img src="douga1" alt="ちいかわ">
+    <%= image_tag 'douga1.jpg', :size => '83x78' %>
   </a>   
-</body>
+  <a href="https://youtu.be/i6d3K6ln-d4">
+  <%= image_tag 'douga 2.jpg', :size => '83x78' %>
+  </a>
+  <a href="https://youtu.be/a7cwqxmn7rY">
+  <%= image_tag 'douga3.jpg', :size => '83x78' %>
+  </a>
+  </div>
+  <div class="omi3">
+  <a href="https://www.anime-chiikawa.jp/">ちいかわ公式サイトはこちらから</a>
+      </div>
+  </body>

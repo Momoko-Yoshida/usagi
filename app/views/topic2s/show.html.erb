@@ -1,0 +1,110 @@
+
+<div class="container-2">
+    <div class="sindan-container">
+      <% if @topic2.question2 == 3  %>
+        <div class="col-12">
+          <p class="situmon">Q3.あなたはお酒が好きですか？</p>
+        </div>
+        <%= form_for(@topic3) do |f| %>
+          <div class="col-6">
+            <div class="col-7">
+              <%= f.radio_button :question3, "7", id: "question_7" %>
+              <label for="question_7">Yes</label>
+            </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            <div class="col-7">
+              <%= f.radio_button :question3, "8", id: "question_8" %>
+              <label for="question_8">No</label>
+            </div>
+          </div>
+          <div class="sindanbotan">
+            <%= f.submit "次へ", class: "button" %>
+          </div>
+        <% end %>
+      <% end %>
+                
+
+      <% if @topic2.question2 == 4  %>
+        <div class="col-12">
+          <p class="situmon">Q3.あなたはポジティブですか？</p>
+        </div>
+        <%= form_for(@topic3) do |f| %>
+          <div class="col-6">
+            <div class="col-7">
+              <%= f.radio_button :question3, "9", id: "question_9" %>
+              <label for="question_9">Yes</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-7">
+              <%= f.radio_button :question3, "10", id: "question_10" %>
+              <label for="question_10">No</label>
+            </div>
+          </div>
+          <div class="sindanbotan">
+            <%= f.submit "次へ", class: "button" %>
+          </div>
+        <% end %>
+      <% end %>
+  </div>
+</div>
+
+<div class="container-2">
+    <div class="sindan-container">
+      <% if @topic2.question2 == 5  %>
+        <div class="col-12">
+          <p class="situmon">Q3.あなたは面倒見がいいですか？</p>
+        </div>
+        <%= form_for(@topic3) do |f| %>
+          <div class="col-6">
+            <div class="col-7">
+              <%= f.radio_button :question3, "11", id: "question_11" %>
+              <label for="question_11">Yes</label>
+            </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            <div class="col-7">
+              <%= f.radio_button :question3, "12", id: "question_12" %>
+              <label for="question_12">No</label>
+            </div>
+          </div>
+          <div class="sindanbotan">
+            <%= f.submit "次へ", class: "button" %>
+          </div>
+        <% end %>
+      <% end %>
+                
+
+      <% if @topic2.question2 == 6  %>
+        <div class="col-12">
+          <p class="situmon">Q3.あなたは自分に自信がありますか？</p>
+        </div>
+        <%= form_for(@topic3) do |f| %>
+          <div class="col-6">
+            <div class="col-7">
+              <%= f.radio_button :question3, "13", id: "question_13" %>
+              <label for="question_13">Yes</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-7">
+              <%= f.radio_button :question3, "14", id: "question_14" %>
+              <label for="question_14">No</label>
+            </div>
+          </div>
+          <div class="sindanbotan">
+            <%= f.submit "次へ", class: "button" %>
+          </div>
+        <% end %>
+      <% end %>
+  </div>
+</div>

@@ -32,6 +32,6 @@ class ChiikawasController < ApplicationController
     def story
     end
     
-    def good
+    def good 
     end
 end

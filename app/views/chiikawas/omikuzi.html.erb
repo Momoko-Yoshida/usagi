@@ -1,3 +1,49 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+/* 背景用 */
+body {
+  padding: 30px;
+}
+a.btn-malformation {
+  font-size: 2rem;
+  padding: 3rem 4rem;
+  color: #fff;
+  border-radius: 100% 80px / 80px 100%;
+  background-color: #EB6100;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a.btn-malformation:hover {
+  color: #fff;
+  border-radius: 60% 80% / 100% 80%;
+}
+.btn-malformation--pastel {
+  background: #FCA1A1;
+  background: -webkit-linear-gradient(-45deg, #FCA1A1 40%, #FCFC5D 100%);
+  background: -webkit-linear-gradient(315deg, #FCA1A1 40%, #FCFC5D 100%);
+  background: linear-gradient(135deg, #FCA1A1 40%, #FCFC5D 100%);
+  -webkit-box-shadow: 30px 10px 0 #FEFEB3;
+  box-shadow: 30px 10px 0 #FEFEB3;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCA1A1L', endColorstr='#FCFC5D', GradientType=1);
+}
+</style>
+</head>
 <div class="omikuji">
 <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
@@ -11,8 +57,7 @@ var mylink = new Array(
     "/chiikawas/suekiti",
     "/chiikawas/kiti",
     "/chiikawas/kyou",
-    "/chiikawas/daikyou"
-
+    "/chiikawas/daikyou" 
 );
 function random_jump() {
     var i = Math.floor(Math.random() * mylink.length);
@@ -21,6 +66,6 @@ function random_jump() {
 // -->
 </script>
 <body>
-<button type="button" onclick="javascript:random_jump();", class="button">今日のあなたの運勢</button>
+<a href="#" class="btn-malformation btn-malformation--pastel" onclick="javascript:random_jump();">今日のあなたの運勢</a>
 </body>
 </div>

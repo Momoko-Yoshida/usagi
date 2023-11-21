@@ -1,32 +1,891 @@
 // Place all the styles related to the chiikawas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+   
 .usagi{
     text-align: center;
     display:flex;
     justify-content: space-around;
 }
 
-
-.text_box{
-     font-size:25px;
-     margin:20px;
-    font-family: 'Courier New', Courier, monospace;
-     color: rgb(236, 151, 184);
+.egg {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 15px #FF6694;
+  font-size: 58px;
+  font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+  font-weight: 800;
+  margin-left: 330px;
 }
-.main{
-    font-size:35px;
-    margin:20px;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgba(255, 213, 0, 0.97);
+
+.usagi2{
+  background-color: rgb(248, 247, 245);
+}
+
+
+
+.ugoira{
+  border-radius: 50%;
+  margin-left: 130px;
+  margin-top: 50px;
+}
+
+
+
+.ugoira{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  
+}
+
+.ugoira{
+  animation-name: anim_s;
+  transform: rotate(20deg);
+  animation-duration: 5s;
+}
+
+@keyframes anim_s {
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.ugoira2{
+  border-radius: 50%;
+  
+}
+.ugoira2{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+}
+
+.ugoira2{
+  animation-name: anim_s;
+  transform: rotate(20deg);
+  animation-duration: 5s;
+}
+
+@keyframes anim_s {
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+ .ugoira3{
+  border-radius: 50%;
+ }
+
+.ugoira3{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+}
+
+.ugoira3{
+  animation-name: anim_s;
+  transform: rotate(20deg);
+  animation-duration: 5s;
+}
+
+@keyframes anim_s {
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+.box8 {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #fff8e8;
+  border-left: solid 10px #ffc06e;
+  font-family:"M+ 1p"; font-weight: 800;  
+  display: inline-block;
+}
+.box8 p {
+  margin: 0; 
+  padding: -10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Nixie+One);
+
+.ribbon {
+  font-family: 'Nixie One', cursive;
+  font-size: 20px;
+ width: 50%;
+    
+ position: relative;
+ background: #93DFB8;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #7AC69F;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon-content:before, .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #60AC85 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+
+.explain{
+    font-family: "M+ 1p"; font-weight: 800;
+    font-size: 20px;
+    color: pink;
 }
 .title{
     font-size:20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
 }
 .link{
     text-align: center;
 
 }
+.douga{
+    text-align: center;
+  }
+  .sindangazou{
+    text-align: center;
+    border-radius: 30px;
+  }
+
+  .sinndann {
+    display: inline-block;
+    position: relative;
+    height: 50px;/*リボンの高さ*/
+    line-height: 50px;/*リボンの高さ*/
+    text-align: center;
+    padding: 0 30px;/*横の大きさ*/
+    font-size: 18px;/*文字の大きさ*/
+    background: #f57a78;/*塗りつぶし色*/
+    color: #FFF;/*文字色*/
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+  
+  .sinndann:before, .sinndann:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+  }
+  
+  .sinndann:before {
+    top: 0;
+    left: 0;
+    border-width: 25px 0px 25px 15px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+  }
+  
+  .sinndann:after {
+    top: 0;
+    right: 0;
+    border-width: 25px 15px 25px 0px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+  }
+  
+  .sinndann{
+    text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 60px;
+            color: #f1f1f1;
+
+  }
+  .pon{
+    font-family:"Nico Moji" ;
+    font-size: 60px;
+    text-align: center;
+  }
+  .chi{
+    text-align: center;
+   
+  }
+  .tarako{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .gatya{
+    text-align: center;
+  }
+  .uranai{
+    text-align: center;
+  }
+  .omikuji{
+    text-align: center;
+  }
+  .tomato{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .arice{
+    text-align: center;
+    font-size: 20px;
+
+  }
+
+  .ame{
+    position: absolute;
+       z-index: -1;
+  }
+  .papo{
+    position: absolute;
+    z-index: -1;
+  }
+ 
+
+  .tama{
+    margin-left: 200px;
+  }
+  
+  .ab{
+  
+    display: flex;
+    gap: 30px
+
+  }
+
+  .sasu{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  .sasu2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  
+  .omi {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: 1000;
+    text-decoration: none;
+    color: rgb(34, 135, 139);
+    font-family: "M+ 1p"; font-weight: 800;
+  }
+  .omi2{
+    text-decoration: none;
+    color: #7AC69F;
+  }
+  .omi3 a{
+    text-decoration: none;
+          color: #93DFB8;
+  }
+
+  
+  .balloon5 {
+    width: 100%;
+    margin: 1.5em 0;
+    overflow: hidden;
+  }
+  
+  .balloon5 .faceicon {
+    float: left;
+    margin-right: -90px;
+    width: 80px;
+  }
+  
+  .balloon5 .faceicon img{
+    width: 100%;
+    height: auto;
+    border: solid 3px #d7ebfe;
+    border-radius: 50%;
+  }
+  
+  .balloon5 .chatting {
+    width: 100%;
+  }
+  
+  .says {
+    display: inline-block;
+    position: relative; 
+    margin: 5px 0 0 105px;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: #d7ebfe;
+  }
+  
+  .says:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px; 
+    left: -24px;
+    border: 12px solid transparent;
+    border-right: 12px solid #d7ebfe;
+  }
+  
+  .says p {
+    margin: 0;
+    padding: 0;
+  }
+  .cd{
+    display: flex;
+    gap: 30px
+
+  }
+  .tama2{
+    margin-left: 100px;
+  }
+  .sora{
+    position: relative;
+    top:100px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .tya{
+    font-size: 30px;
+    font-weight: 500px;
+  }
+  .tya3{
+    font-size: 30px;
+    font-weight: 500px;
+    text-align: center;
+  }
+  .tora{
+    text-align: center;
+    border-radius: 50%;
+
+  }
+  .tya4{
+    text-align: center;
+    font-family:"M+ 1p"; font-weight: 800; 
+    font-size: 30px;
+  .choco{
+    border-radius: 100%;
+    }
+  }
+  .pa{
+    border-radius: 50px;
+  }
+  .box30 {
+    margin: 2em 0;
+    background: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    display: inline-block;
+    
+}
+
+    
+
+.nazo{
+  border-radius: 20%;
+}
+
+.balloon3-right-btm {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 15px 1.5em 0;
+  padding: 0 5px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  background: #a58eff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  
+}
+
+.balloon3-right-btm:before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #a58eff;
+  z-index: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ranka{
+  text-align: center;
+  font-family: "Nico Moji";
+  font-size: 40px;
+  margin-top: -60px;
+}
+
+.h1 {
+  background: #b0dcfa; /*背景色*/
+  padding: 0.5em;/*文字周りの余白*/
+  color: white;/*文字を白に*/
+  border-radius: 0.5em;/*角の丸み*/
+  display: inline-block;
+  font-family:"M+ 1p"; font-weight: 800; 
+  font-size: 40px;
+  margin-left: 290px;
+  margin-top: 80px;
+
+}
+
+.wa{
+  display: flex;
+  gap:20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  
+  
+}
+.wa {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border: double 5px #4ec4d3;
+}
+.wa p {
+  margin: 0; 
+  padding: 0;
+}
+.sora2{
+  position: relative;
+  top:120px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cd2{
+  display: flex;
+  gap: 35px;
+
+  
+}
+
+.cd3{
+  display: flex;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.tama3{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.h2 {
+  position: relative;
+  border-top: solid 2px #80c8d1;
+  border-bottom: solid 2px #80c8d1;
+  background: #f4f4f4;
+  line-height: 1.4;
+  padding: 0.4em 0.5em;
+  margin: 2em 0 0.5em;
+  display: inline-block;
+  font-size: 40px;
+  font-family:"M+ 1p"; font-weight: 800; 
+  margin-left: 270px;
+  color: cadetblue;
+
+  
+}
+
+.h2:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '\f0a7\ POINT';
+  background: #80c8d1;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 7px 3px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.anoko{
+  text-align: center;
+}
+
+.pa{
+  animation-name: ▲▲▲▲;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+}
+
+@keyframes ▲▲▲▲ {
+  0% {
+      transform: translate(0,0px);
+  }
+
+  100% {
+      transform: translate(0,-15px)
+  }
+}
+
+.anoko2 {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #ff7d6e;
+  background: #ffebe9;
+  border-top: solid 10px #ff7d6e;
+  display: inline-block;
+  margin-left: 150px;
+  font-family:"M+ 1p"; font-weight: 800; 
+  font-size: 20px;
+
+}
+.anoko2 p {
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+.momo{
+  text-align: center;
+  font-family:"M+ 1p"; font-weight: 800; 
+  font-size: 30px;
+  color: #5375bd;
+}
+
+.momo2 {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1.4em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+  border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+  margin-left: 550px;
+  margin-top: 20px;
+}
+
+.momo2:before {  
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #FFF;
+}
+
+
+header {
+  height: 100px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #64c5c0;
+  color: white;
+}
+header .headline{
+    line-height: 100px;
+    float: left;
+    font-size: 30px;
+    margin-left: 100px;
+}
+.nav-list {
+    line-height: 100px;
+    float: left;
+    margin-left: 30px;
+    list-style: none;
+}
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.ribbon14-wrapper {  
+  display: block;
+  position: relative;
+  margin: 15px auto;
+  padding: 10px 0;
+  width: 300px;
+  background: #f1f1f1;
+  box-sizing: border-box;
+  font-family: "M+ 1p"; font-weight: 800; 
+  font-size: 20px;
+  margin-top: 45px;
+  }
+
+.ribbon14 {  
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 2;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  background: #ff785b;
+}
+
+.ribbon14:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 0;
+  width: 0;
+  border-left: 20px solid #ff785b;
+  border-right: 20px solid #ff785b;
+  border-bottom: 10px solid transparent;
+}
+
+.toc-005 {
+  margin-bottom: 30px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  
+}
+
+.toc-005 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #2589d0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+
+}
+
+.toc-005 div::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M3.8%2017.2h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.8-.8-.8zm0-15h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8V3c-.1-.4-.4-.8-.8-.8zm0%207.6h-3c-.5%200-.8.3-.8.7v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.7-.8-.7zM23.2%2018h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8zm0-15h-15c-.4%200-.7.3-.7.8v1.5c0%20.4.3.7.7.7h15c.5%200%20.8-.3.8-.8V3.8c0-.5-.3-.8-.8-.8zm0%207.5h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8z%22%2F%3E%3C%2Fsvg%3E');
+  content: '';
+}
+
+.toc-005 ol {
+  list-style-type: disc;
+  margin: 0;
+  overflow: hidden;
+}
+
+.toc-005 > ol {
+  padding: 1em 1em 1em 3em;
+}
+
+.toc-005 ol ol {
+  margin-top: 5px;
+  padding-left: 1.1em;
+}
+
+.toc-005 li {
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.toc-005 ol ol li {
+  font-weight: 500;
+  font-size: .9em;
+}
+
+.toc-005 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.db{
+  display: flex;
+    gap: 35px;
+  }
+
+.sora3{
+  position: relative;
+  top:120px;
+  font-size: 20px;
+  font-family: "M+ 1p"; font-weight: 500; 
+}
+
+.pu{
+  border-radius: 50%;
+}
+
+.arrow {
+  height: 20px;
+  width: 40px;
+  background-color: #63a0e2;
+  position:  relative;
+  margin-top: 130px;
+  margin-right: 40px;
+}
+
+
+.arrow::after {
+  content:  '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #63a2e6;
+  position:  absolute;
+  top: -50%;
+  left: 100%;
+}
+
+.h3 {
+  position: relative;
+  border-top: solid 2px #80c8d1;
+  border-bottom: solid 2px #80c8d1;
+  background: #f4f4f4;
+  line-height: 1.4;
+  padding: 0.4em 0.5em;
+  margin: 2em 0 0.5em;
+  display: inline-block;
+  font-size: 40px;
+  font-family:"M+ 1p"; font-weight: 800; 
+
+  color: cadetblue;
+
+  
+}
+
+.h3:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '\f0a7\ POINT';
+  background: #80c8d1;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 7px 3px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.for{
+  display: flex;
+}
+
+.satoru{
+  margin-right: 25px;
+}
+
+.yuji{
+  text-align: center;
+  margin-top: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+.h4 {
+  background: #b0dcfa; /*背景色*/
+  padding: 0.5em;/*文字周りの余白*/
+  color: white;/*文字を白に*/
+  border-radius: 0.5em;/*角の丸み*/
+  display: inline-block;
+  font-family:"M+ 1p"; font-weight: 800; 
+  font-size: 40px;
+  margin-left: 200px;
+  margin-top: 80px;
+
+}
+
+.megumi{
+  display: flex;
+}
+
+.h5 {
+
+    padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+    font-size: 25px;
+    font-family: "M+ 1p"; font-weight: 800; 
+    display: inline-block;
+  }
+
+  .omi2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #f9a9ae;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    font-weight: bold;
+    background-image: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+  }
+  
+  .omi2:active {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.32);
+    background-image: linear-gradient(#fed6e3 0%, #ffcfcf 100%);
+  }
+
+  .tapu{
+    text-align: center;
+    font-size: 30px;
+    font-family: "M+ 1p"; font-weight: 800; 
+  }
 

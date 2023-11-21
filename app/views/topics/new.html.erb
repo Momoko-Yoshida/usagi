@@ -1,0 +1,28 @@
+
+<div class="container-2">
+    <div class="sindan-container">
+        <div class="col-12">
+            <p class="situmon">Q1.あなたは資格を持っていますか？</p>
+        </div>
+        <%= form_for(@topic, class: 'form-horizontal', role: 'form') do |f| %>
+            <div class="col-6">
+                <div class="col-7">
+                    <%= f.radio_button :question, "1", id: "question_1" %>
+                    <label for="question_1">Yes</label>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div class="col-7">
+                    <%= f.radio_button :question, "2", id: "question_2" %>
+                    <label for="question_2">No</label>
+                </div>
+            </div>
+            <div class="sindanbotan">
+                <%= f.submit "Next", class: "button" %>
+            </div>
+        <% end %>
+    </div>
+</div>

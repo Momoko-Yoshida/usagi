@@ -1,0 +1,31 @@
+// Place all the styles related to the topics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.col-6{
+    justify-content: center;
+}
+.col-6 input{
+    display: none;
+}
+.col-6 label{
+    display: block;
+    cursor: pointer;
+    border-right: 1px solid #D7D7D7;
+    background: #E5E5E5;
+    color: #555E64;
+    font-size: 20px;
+    text-align: center;
+    transition: .2s;
+    border-radius: 60px;
+    padding: 5%;
+}
+.col-6 input[type="radio"]:checked + label {
+    background-color: #0bd;
+    color: #fff;
+}
+.situmon{
+    font-family:  "M+ 1p"; font-weight:700;
+    font-size: 30px;
+    color: cornflowerblue;
+
+}

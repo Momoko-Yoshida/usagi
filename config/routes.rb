@@ -14,5 +14,8 @@ get'chiikawas/daikyou'=>'chiikawas#daikyou'
 get'chiikawas/story'=>'chiikawas#story'
 get'chiikawas/good'=>'chiikawas#good'
 
+resources:topics
+resources:topic2s
+resources:topic3s
 root "chiikawas#index"
 end
